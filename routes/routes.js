@@ -1,4 +1,4 @@
-import MainPage from './MainPage';
+import HomePage from '../client/pages/Home/Home';
 //import AnotherPage from './AnotherPage';
 
 const routes = [
@@ -6,7 +6,7 @@ const routes = [
     path: '/',
     name: 'home',
     exact: true,
-    component: MainPage,
+    component: HomePage,
   }
 ];
 
