@@ -18,7 +18,7 @@ const PostContainer = ({onDogSelected})=>{
     const { loading, error, data } = useQuery(getPosts);
     if(loading) return <p>Loading...</p>
     if(error) return <p>We have an error</p>
-    console.log(data)
+    // console.log(data)
     return (
         <select name="dog" onChange={onDogSelected}>
             {data.dogs.map(dog => (

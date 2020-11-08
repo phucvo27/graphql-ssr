@@ -7,15 +7,15 @@ import { renderRoutes } from 'react-router-config';
 import serialize from 'serialize-javascript';
 import { Helmet } from 'react-helmet';
 import Home from '../client/pages/Home/Home'
-//import Routes from '../client/Routes';
+import Routes from '../client/Routes/routes';
 
 export const App = (req, client, context) => {
   return (
     <ApolloProvider client={client}>
       <StaticRouter location={req.path} context={context}>
-        <Route path="/" exact component={Home} />
+        {renderRoutes(Routes)}
       </StaticRouter>
-  </ApolloProvider>
+    </ApolloProvider>
   )
 }
 
@@ -43,7 +43,7 @@ export default (req, client, context) => {
         <script>
             window.__APOLLO_STATE__=${JSON.stringify(state).replace(/</g, '\\u003c')};
         </script>
-        
+        <script src="/static/bundle.js" type="text/javascript"></script>
       </body>
     </html>
   `;

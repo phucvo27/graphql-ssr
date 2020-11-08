@@ -4,11 +4,11 @@ import { gql, useQuery } from '@apollo/client';
 const getPosts = gql`
     query {
         dogs {
-            id
-            breed
-            displayImage
-            images {
-            url
+                id
+                breed
+                displayImage
+                images {
+                url
             }
         }
     }
