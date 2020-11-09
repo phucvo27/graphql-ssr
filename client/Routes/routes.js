@@ -1,12 +1,17 @@
 import HomePage from '../pages/Home/Home';
+import App from '../App'
 //import AnotherPage from './AnotherPage';
 
 const routes = [
   {
-    path: '/',
-    name: 'home',
-    exact: true,
-    component: HomePage,
+    ...App,
+    routes: [
+      {
+        path: "/",
+        component: HomePage,
+        exact: true
+    },
+    ]
   }
 ];
 

@@ -1,6 +1,7 @@
 const path = require('path');
 const entryPath = path.resolve(__dirname, 'client', 'index.js');
-console.log(entryPath)
+//const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+//console.log(entryPath)
 const config = {
     entry: entryPath,
     output: {
@@ -14,7 +15,7 @@ const config = {
                 loader: 'babel-loader',
                 test: /.(js|jsx)$/,
                 exclude: /node_modules/
-            }
+            },
         ]
     },
     devtool: 'inline-source-map',

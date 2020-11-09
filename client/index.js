@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom';
 import { ApolloProvider, createHttpLink, ApolloClient, InMemoryCache } from '@apollo/client'
 import { renderRoutes } from 'react-router-config';
 import { BrowserRouter } from 'react-router-dom';
-import Routes from './Routes/routes'
+import Routes from './Routes/routes';
+// import './scss/index.scss'
 const httpLink = createHttpLink({
     uri: "https://71z1g.sse.codesandbox.io/",
   });
@@ -14,7 +15,8 @@ const client = new ApolloClient({
     cache,
 });
 console.log("================== Client Side store ==================")
-console.log(window.__APOLLO_STATE__)
+console.log(window.__APOLLO_STATE__);
+
 ReactDOM.hydrate(
     <ApolloProvider client={client}>
         <BrowserRouter>

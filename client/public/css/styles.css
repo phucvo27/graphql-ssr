@@ -1,0 +1,29 @@
+.flex-sb {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.header {
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, 0.05); }
+  .header__top {
+    background-color: #ecb22d; }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  color: #333;
+  line-height: 1.7;
+  font-size: 1.6rem; }
+
+.container {
+  width: 120rem;
+  margin: 0 auto; }

@@ -1,12 +1,18 @@
 import React from 'react';
-import { BrowserRouter,Route } from 'react-router-dom';
-import Home from './pages/Home/Home'
-const App = () => {
-    return (
-        <BrowserRouter>
-            <Route path="/" exact component={Home} /> 
-        </BrowserRouter>
-    )
+import { renderRoutes } from 'react-router-config';
+import Header from './components/Header/Header.jsx'
+
+class App extends React.Component {
+    render(){
+        return (
+            <React.Fragment>
+                <Header />
+                {renderRoutes(this.props.route.routes)}
+            </React.Fragment>
+        )
+    }
 }
 
-export default App;
+export default {
+    component: App
+};

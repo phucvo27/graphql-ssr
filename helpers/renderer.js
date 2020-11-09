@@ -36,7 +36,7 @@ export default (req, client, context) => {
   return `
     <html>
       <head>
-        
+        <link rel="stylesheet" href="/static/css/styles.css">
       </head>
       <body>
         <div id="root">${content}</div>
