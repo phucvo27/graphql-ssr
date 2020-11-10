@@ -1,19 +1,26 @@
 @import './variables/variables.scss';
 @import './util/util.scss';
-@import './components//Header.scss';
+@import './pages/products.scss';
+@import './pages/productDetail.scss';
+@import './pages/checkout.scss';
+@import './components/Header.scss';
+@import './components/Product.scss';
+@import './components/Table.scss';
+@import './components/InputGroup.scss';
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
 html {
     font-size: 62.5%;
 }
-
 body {
-    color: $color-text;
-    line-height: 1.7;
     font-size: 1.6rem;
+    line-height: 1.7;
+    color: #333
 }
 
 .container {
